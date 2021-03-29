@@ -1,10 +1,10 @@
-# Async Redux Lab: Pictures of Cats
+git # Async Redux Lab: Pictures of Cats
 
 Who doesn't want to look at pictures of cats? Well, now you can look at up to 20
 pictures of cats with our new React + Redux app. All you have to do is...build
 it yourself! In this lab, you are tasked with building out a React + Redux app
 that fetches data using Thunk. Since this is a pretty specific task, we'll walk
-through it a bit in this Readme. Let's get started! 
+through it a bit in this Readme. Let's get started!
 
 ## Objectives
 
@@ -229,7 +229,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class App extends Component {
-  
+
   render() {
     console.log(this.props.catPics)
     return (
@@ -284,12 +284,12 @@ import { connect } from 'react-redux';
 import { fetchCats } from './actions/catActions'
 
 class App extends Component {
-  
+
   componentDidMount() {
     console.log(this.props)
     this.props.fetchCats()
   }
-  
+
   render() {
     console.log(this.props.catPics) // log will fire every time App renders
     return (
@@ -344,8 +344,8 @@ container component, `App`, should render the`CatList` component. `App` will
 pass `catPics` down to `CatList` as a prop. `CatList` should iterate over the
 cat pics and display each cat pic in an image URL. Remember to use `debugger` to
 take a look at the `catPics` collection and determine which property of each
-`catPic` object you will use to populate your `<img>` tag and render the image. 
-In order to get the tests to pass, you will need to wrap your `<img>` tags in a 
+`catPic` object you will use to populate your `<img>` tag and render the image.
+In order to get the tests to pass, you will need to wrap your `<img>` tags in a
 `<div>` tag or something similar.
 
 ## Conclusion
